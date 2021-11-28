@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub</title>
+    <style>
+        body{
+            background-image: url(BG.jpg);
+        }
+    </style>
+    <link rel="stylesheet" href="css/menu_bar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show');
+        }); 
+    });
+    </script>
+</head>
+<body>
+    <nav class="M1">
+            
+            <lable class = "L">BookHub</lable>
+            <ul>
+
+                <li>
+                    <a class="active" href="index.php" target="frame1">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#" >TRENDING</a>
+                    <nav class="M2">
+                        <ul>
+
+                            <li>
+                                <a href="trending.php" target="frame1">BOOKS</a>
+                            </li>
+                            <li>
+                                <a href="popular_authors.html" target="frame1">AUTHORS</a>
+                            </li>
+                            
+                        </ul>
+                    </nav> 
+                </li>
+                <li>
+                    <a href="funnypedia.html" target="frame1">FunnyPedia</a>
+                </li>
+
+                <li>
+                    <a href="contact2.html" target="frame1">Contact Us</a>
+                </li>
+                <li>
+                    <a href="about.html" target="frame1">ABOUT US</a>
+                </li>
+
+                <li>
+                    <a href="#">CREATORS</a>
+
+                    <nav class="M2">
+                        <ul>
+
+                            <li>
+                                <a href="abhi.html" target="frame1">ABHI</a>
+                            </li>
+                            <li>
+                                <a href="saurav.html" target="frame1">SAURAV</a>
+                            </li>
+                            <li>
+                                <a href="nirmal.html" target="frame1">NIRMAL</a>
+                            </li>
+                            
+                        </ul>
+                    </nav> 
+                </li>
+
+                <li>
+                    <a href="#">SETTINGS</a>
+                    <nav class="M2">
+                        <ul>
+
+                            <li>
+                                <a href="profile.php" target="frame1">PROFILE</a>
+                            </li>
+                            <li>
+                                <a href="reviews.php" target="frame1">REVIEWS</a>
+                            </li>
+                            <li>
+                                <a href="feedback.php" target="frame1">FEEDBACK</a>
+                            </li>
+                            <li>
+                                <a href="policies.html" target="frame1">POICIES</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </li>
+
+                <li>
+                    <a href="login.php" target="frame1">LOG IN</a>
+                </li>
+                <li>
+                    <a href="signup.php" target="frame1">SIGN UP</a>
+                </li>
+                <li>
+                    <a href="login.php" target="frame1">LOG OUT</a>
+                </li>
+            </ul>
+            <label id = "icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+
+        <iframe  style="margin-top: 0;" src="index.php" frameborder="0" name="frame1" width="100%" height="800px"></iframe>
+        <!-- <iframe scrolling="no" src="footer.html" frameborder="0" height="170" width="100%"></iframe> -->
+
+
+        <div class="footer" style="background-color: #34495e; color: white;">
+            <table id="xyz" border="0" width="100%" style="color: white; text-align: center;">
+                <tr>
+                    <td><img src="img/profile.png" height="80px" style="margin: 10px;"></td>
+                    <td><b>Explore</b></td>
+                    <td><b>Legal</b></td>
+                    <td><b>Others</b></td>
+        
+                </tr>
+                <tr>
+                    <td><h3>Follow us</h3></td>
+                    <td><a href="index.php" target="frame1" style="text-decoration: none; color: white;">Home</a></td>
+                    <td><a href="policies.html" target="frame1" style="text-decoration: none; color: white;">Policies</a></td>
+                    <td><a href="sitemaps.html" target="frame1" style="text-decoration: none; color: white;">Sitemaps</a></td>
+                </tr>
+                <tr>
+                    <td id="icons"><img src="img/gmail.png" height="30px" style="margin: 5px;"><img src="img/twitter.png" height="30px" style="margin: 5px;"><img src="img/instagram.png" height="30px" style="margin: 5px;"></td>
+                    <td><a href="profile.php" target="frame1" style="text-decoration: none; color: white;">Profile</a></td>
+                    <td><a href="reviews.php" target="frame1" style="text-decoration: none; color: white;">Review</a></td>
+                    <td><a href="FAQ.php" target="frame1" style="text-decoration: none; color: white;">FAQ</a></td>
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </div>
+</body>
+</html>

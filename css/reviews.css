@@ -1,0 +1,11 @@
+.btn button{
+    margin-right: 40px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 120px;
+}
+.btn h1 {
+    text-align: center;
+}

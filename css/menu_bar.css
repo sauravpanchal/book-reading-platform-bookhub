@@ -1,0 +1,213 @@
+*{
+    padding : 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: monospace;
+}
+
+.M1 {
+    height: 80px;
+    width : 100%;
+    background: #34495e;
+}
+
+.L{
+    font-size: 35px;
+    font-weight: bold;
+    color:white ;
+    padding:0 80px;
+    line-height: 80px;    
+}
+label.L2 img{
+    font-size: 35px;
+    font-weight: bold;
+    color:white ;
+    height: 70px;
+    width: 70px;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding:8px 8px;
+    border-radius: 2.5px;
+}
+
+.M2 a{
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 2.5px;
+    padding: 8px 8px;
+    margin: 0;
+}
+
+.M3 a{
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 2.5px;
+    padding: 8px 8px;
+    margin: 0;
+}
+
+
+a.active,a:hover{
+    text-align: center;
+    border: 1px solid white ;
+    color: turquoise;
+    transition: .7s;
+} 
+
+.M2 ul{
+    display: none;
+}
+
+.M3 ul li{
+    display: none;
+} 
+
+.M1 ul li:hover .M2 ul{
+    text-align: center;
+    display: block;
+}
+
+.M1 ul li:hover .M2 ul{
+    text-align: center;
+    display: inline-block;
+}
+
+.M2 ul li:hover .M3 ul li{
+    text-align: center;
+    display: inline-block;
+}
+.M2 ul li{
+    text-align: center;
+    width: 40px;
+}
+.M3 ul li{
+    text-align: center;
+    width: 40px;
+}
+
+.M1 ul li:hover .M2{
+    text-align: right;
+    position:fixed;
+    width: 120px;
+    display: block;
+    color: turquoise;
+    background-color: #34495e;
+    transition: .3s;
+    padding: 0 0 23px 0;
+    margin-left: -14px;
+}
+
+.M2 ul li:hover .M3 {
+    text-align: center;
+    position:fixed;
+    height: 240px;
+    width: 100px;
+    display: inline-block;
+    color: turquoise;
+    background-color: #34495e;
+    transition: .3s;
+    padding-left: 40px;
+    margin: -80px 52px;
+}
+
+.M3 ul li:hover{
+    color: turquoise;
+}
+
+nav #icon{
+    color: white;
+    font-size: 22px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 29px;
+    cursor: pointer;
+    display: none;
+}
+
+/* footer */
+
+#xyz tr{
+    text-align: center;
+
+}
+
+#xyz tr img {
+    padding: 5px;
+}
+
+@media (max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size : 17px;
+    }
+}
+@media (max-width: 1270px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+        border: 1px solid white;
+    }
+    nav ul.show{
+        left: 0;
+
+    }
+}
+
+
+
